@@ -1,0 +1,157 @@
+body {
+  font-family: 'Spartan', sans-serif;
+  padding: 7% 7% 0 7%;
+  font-size: 15px;
+  background-color: #ffffff;
+  background-image: url(images/bg-pattern-top-desktop.svg);
+  background-image: url(images/bg-pattern-bottom-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: 80%;
+}
+
+p {
+  color: 	#937b92;
+}
+
+h1 {
+  color: #502050;
+}
+
+h6 {
+  color: #ee68a4;
+  opacity: 0.5;
+}
+
+
+
+.stars {
+  color: #502050;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: 1fr;
+  width: 30%;
+}
+
+.float-container {
+    padding: 20px;
+    margin-bottom: 25%;
+    width: 100%;
+
+}
+
+.float-child {
+    width: 50%;
+    float: left;
+    padding: 20px;
+}
+
+.head {
+  width: 40%;
+  margin-right: 10%;
+}
+
+.five {
+  background-color: #f7f2f7;
+  width: 80%;
+  text-align: center;
+  border-radius: 3%;
+  padding: 1rem;
+}
+
+.report {
+  transform: translate(10px);
+}
+
+.tech {
+  transform: translate(20px);
+}
+
+.boxes {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1rem;
+  clear: both;
+  width: 100%;
+  padding-bottom: 16%;
+}
+
+.profile-2 {
+  transform: translate(0,20px);
+}
+
+.profile-3 {
+  transform: translate(0,40px);
+}
+
+.profile {
+  background-color: #502050;
+  padding: 2rem;
+  border-radius: 3%;
+}
+
+.pic {
+  border-radius: 50%;
+  width: 2rem;
+}
+
+.pfp {
+  padding-top: 20%;
+}
+
+.title {
+  color: #ffffff;
+}
+
+.address {
+  display: grid;
+  grid-template-columns: 50px 200px;
+}
+
+.attribution {
+  position: inline-block;
+  bottom: 0;
+  height: 1rem;
+  width: 100%;
+
+}
+
+/* media query breakpoints */
+
+@media (max-width: 1088px) {
+
+  body {
+    background-image: url(bg-pattern-top-moblile.svg);
+    background-image: url(bg-pattern-bottom-mobile.svg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .head, .stars {
+    clear: both;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+  }
+
+  .five {
+    margin: auto;
+    transform: translate(0);
+    width: 100%;
+  }
+
+  .profile {
+    display: inline-block;
+    transform: translate(0);
+  }
+
+  .boxes {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+    width: 95%;
+    margin: auto;
+  }
+}
